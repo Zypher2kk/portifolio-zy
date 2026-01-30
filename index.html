@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>meu portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1220;
+      --card: #171a2e;
+      --primary: #6c63ff;
+      --text: #eaeaf0;
+      --muted: #a1a1b3;
+    }* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #0f1220, #141736);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid var(--primary);
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 30px rgba(108,99,255,0.6);
+}
+
+header h1 {
+  font-size: 2.8rem;
+}
+
+header h1 span {
+  color: var(--primary);
+}
+
+header p {
+  margin-top: 10px;
+  color: var(--muted);
+  max-width: 500px;
+}
+
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-radius: 10px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.card {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill {
+  background: linear-gradient(135deg, #6c63ff, #857dff);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(108,99,255,0.4);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+
+.project p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills-images {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.skills-images img {
+  width: 70px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.skills-images img:hover {
+  transform: scale(1.08);
+}
+
+  </style>
+</head>
+<body>  <header class="fade">
+    <div>
+      <img src="https://files.catbox.moe/qtkbva.jpg" alt="minha foto">
+      <h1>Olá, eu sou <span>zypher2k</span></h1>
+      <p>Estudante apaixonado por códigos e desafios <\> </p>
+    </div>
+  </header>  <section class="fade">
+    <h2 class="title">Sobre mim:</h2>
+    <div class="about">
+      <div class="card">
+        <p>
+          Sou um estudante de programação, procurando sempre ser melhor e conhecer novas tecnologias que possam agregar em meu futuro como desenvolvedor.
+        </p>
+      </div>
+      <div class="card">
+        <p>
+          [ ‼️ ] OBJETIVO: <p>crescer como desenvolvedor</p><br>
+          [ 💻 ] STACK PRINCIPAL: <p>HTML, CSS, JavaScript</p><br>
+          [ 📚 ] Sempre estudando e evoluindo.
+        </p>
+      </div>
+    </div>
+  </section>  <section class="fade">
+    <h2 class="title">Habilidades:</h2>
+    <div class="skills">
+      <div class="skill">JAVASCRIPT</div>
+      <div class="skill">NODE.JS</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">BOT-BAILEYS</div>
+    </div>
+    <div class="skills-images">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+</div>
+  </section>  <section class="fade">
+    <h2 class="title">Projetos:</h2>
+    <div class="projects">
+      <div class="card project">
+        <h3><p>[ 🤖 ] base bot para whatsapp</p>
+        <a href="https://github.com/Zypher2kk/Base-Bot-Dragon">visitar</a>
+      </div>
+      <div class="card project">
+         <h3><p>[ 🧪 ] tela bot</p>
+        <a href="https://github.com/Zypher2kk/zypher2k">visitar</a>
+      </div>
+      <div class="card project">
+        <h3><p>[ 🔢 ] calculadora básica</p>
+        <a href="#">visitar</a>
+      </div>
+    </div>
+  </section>  <footer>
+    © 2026 - Desenvolvido by zypher2kシ 
+  </footer>  <script>
+    const elements = document.querySelectorAll('.fade');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script></body>
+</html>
